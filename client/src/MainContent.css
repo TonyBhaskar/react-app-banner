@@ -1,0 +1,29 @@
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-links {
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.name {
+    font-family: "Abril Fatface";
+}
+
+.text {
+    font-family: ubuntu;
+}

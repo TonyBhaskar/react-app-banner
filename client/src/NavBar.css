@@ -1,0 +1,31 @@
+.nav-bar {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-bar .nav-items {
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #d9ffb6;
+    padding: 15px;
+    border: 2px solid;
+}
+
+.name {
+    font-family: "Abril Fatface";
+}
+
+.text {
+    font-family: ubuntu;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,43 @@
+.banner {
+    border: 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    width: 400px;
+    right: 50px;
+    top: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.banner-body {
+    color: white;
+}
+
+.banner-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px;
+}
+
+.banner-description,
+.banner-timer {
+    padding: 5px;
+}
+
+button {
+    padding: 3px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.collapse {
+    float: right;
+    margin-right: 5px;
+}
