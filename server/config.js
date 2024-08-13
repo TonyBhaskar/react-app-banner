@@ -3,12 +3,13 @@ import dotenv from 'dotenv';
 
 dotenv.config(); // Load environment variables from .env file
 
-// Create a connection 
+// Create a connection using the environment variables
 const connection = await mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE
+    host: process.env.MYSQLHOST,
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD,
+    database: process.env.MYSQLDATABASE,
+    port: process.env.MYSQLPORT,
 });
 
 // Initialize default data
@@ -100,18 +101,3 @@ export async function updateBanner(id, banner_desc, banner_timer, banner_link, i
         throw error; // Rethrow to handle it in the calling function
     }
 }
-
-
-// Example usage of updateBanner function
-// updateBanner(3, 'Updated test', 10, 'updated_test')
-//     .then(updatedBanner => {
-//         console.log('Banner updated:', updatedBanner);
-//     })
-//     .catch(error => {
-//         console.error('Error updating banner:', error);
-//     });
-
-console.log('DB_HOST:', process.env.DB_HOST);
-console.log('DB_USER:', process.env.DB_USER);
-console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
-console.log('DB_DATABASE:', process.env.DB_DATABASE);

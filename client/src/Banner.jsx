@@ -9,7 +9,7 @@ const Banner = () => {
 
     useEffect(() => {
         // Fetch banners from backend
-        fetch('http://localhost:3000/')
+        fetch('https://react-app-banner.onrender.com/')
             .then(response => response.json())
             .then(data => {
                 setBannerData(data);

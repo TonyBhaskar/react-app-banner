@@ -14,7 +14,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchBanner = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/');
+                const response = await axios.get('https://react-app-banner.onrender.com/');
                 if (response.data.length > 0) {
                     const fetchedBanner = response.data[0];
                     setBanner(fetchedBanner);
@@ -38,7 +38,7 @@ const Dashboard = () => {
                 throw new Error('Banner ID is not defined');
             }
 
-            const response = await axios.put(`http://localhost:3000/update/${banner.id}`, {
+            const response = await axios.put(`https://react-app-banner.onrender.com/update/${banner.id}`, {
                 banner_desc: description,
                 banner_timer: timer,
                 banner_link: link,
